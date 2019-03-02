@@ -2,11 +2,11 @@ package fizzbuzz;
 
 public class FizzBuzz {
 
-    public static String FizzConvert(int number){
+    public String FizzConvert(int number){
         if (number==0){
             return "";
         }
-       else if(number%3==0 && number%5==0){
+       else if(number%15==0){
             return "FizzBuzz";
         }
         else if(number%3==0){
@@ -20,8 +20,9 @@ public class FizzBuzz {
 }
 
     public static void main(String[] args) {
+        FizzBuzz fizzBuzz=new FizzBuzz();
         for (int i=1; i<=100; i++){
-           System.out.println(FizzConvert(i));
+           System.out.println(fizzBuzz.FizzConvert(i));
         }
     }
 
