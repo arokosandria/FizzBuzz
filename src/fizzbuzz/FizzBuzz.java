@@ -6,24 +6,27 @@ public class FizzBuzz {
         if (number==0){
             return "";
         }
-       else if(number%15==0){
+        if(number%15==0){
             return "FizzBuzz";
         }
-        else if(number%3==0){
+        if(number%3==0){
             return "Fizz";
         }
-        else if(number%5==0){
+        if(number%5==0){
             return "Buzz";
         }
 
         return String.valueOf((number));
 }
+        public void print(){
+            for (int i=1; i<=100; i++){
+                System.out.println(FizzConvert(i));
 
+        }}
     public static void main(String[] args) {
-        FizzBuzz fizzBuzz=new FizzBuzz();
-        for (int i=1; i<=100; i++){
-           System.out.println(fizzBuzz.FizzConvert(i));
+        FizzBuzz f =new FizzBuzz();
+        f.print();
+
         }
     }
 
-}
